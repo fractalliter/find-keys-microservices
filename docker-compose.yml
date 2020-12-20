@@ -1,0 +1,14 @@
+version: '3'
+services:
+  streamprovider:
+    build:
+      context: ./stream_provider
+    ports: 
+      - '3000:3000'
+
+  streamconsumer:
+    build:
+      context: ./stream_consumer
+    ports: 
+    - '3001:3001'
+

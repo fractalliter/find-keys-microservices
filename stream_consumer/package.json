@@ -1,0 +1,25 @@
+{
+  "name": "find-keys",
+  "version": "1.0.0",
+  "description": "find keys in a http get response json file efficiently",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fractalliter/find-keys.git"
+  },
+  "keywords": [
+    "nodejs",
+    "json",
+    "optimize",
+    "search"
+  ],
+  "author": "fractalliter <eliass.rahmani@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fractalliter/find-keys/issues"
+  },
+  "homepage": "https://github.com/fractalliter/find-keys#readme"
+}

@@ -1,0 +1,20 @@
+{
+  "name": "stream_provider",
+  "version": "1.0.0",
+  "description": "a stream provider server",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fractalliter/find-keys.git"
+  },
+  "keywords": [
+    "stream",
+    "json",
+    "nodejs"
+  ],
+  "author": "fractalliter <eliass.rahmani@gmail.com>",
+  "license": "MIT"
+}
