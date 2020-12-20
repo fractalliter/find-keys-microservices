@@ -3,7 +3,7 @@
  *
  * @param {string} url
  * @param {Array<string>} keys
- * @param {Function} callback
+ * @param {(err: Error, res: Object) => {}} callback
  */
 function findKeys(url, keys, callback) {
   const jsonURL = new URL(url);
@@ -25,7 +25,7 @@ function findKeys(url, keys, callback) {
       callback(err);
     });
     readJson.on('end', () => {
-      callback(null, JSON.parse(`{${matches.join(', ')}}`));
+      callback(null, `{${matches.join(', ')}}`);
     });
   });
 }

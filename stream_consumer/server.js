@@ -1,5 +1,5 @@
 const http = require('http');
-const findKeys = require('./index');
+const findKeys = require('./find_keys');
 
 http.createServer((req, res) => {
   if (req.method === 'POST') {
@@ -12,8 +12,8 @@ http.createServer((req, res) => {
       findKeys(
         'http://streamprovider:3000',
         JSON.parse(dt).keys,
-        (err, json) => {
-          if (!err) res.end(JSON.stringify(json));
+        (err, response) => {
+          if (!err) res.end(response);
           else res.end(JSON.stringify({ error: 'An error happen!' }));
         },
       );
