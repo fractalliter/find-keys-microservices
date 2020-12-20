@@ -16,7 +16,7 @@ function findKeys(url, keys, callback) {
         readJson.destroy();
       }
       keys.forEach((i) => {
-        const f = data.toString().match(new RegExp(`"${i}":[^,]+`));
+        const f = data.toString().match(new RegExp(`"${i}":\s?"(.*?)"`));
         if (f) matches.push(f[0]);
       });
     });
